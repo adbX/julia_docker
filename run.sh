@@ -1,2 +1,2 @@
 #!/bin/bash
-exec julia examples/runfirst.jl | tee results.txt
+exec ./julia/bin/julia examples/runfirst.jl | tee results.txt
