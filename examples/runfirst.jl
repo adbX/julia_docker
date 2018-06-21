@@ -1,3 +1,4 @@
+ENV["PYTHON"]="/usr/bin/python"
 if Pkg.installed("PyPlot")==nothing
   Pkg.clone("PyPlot")
 end
