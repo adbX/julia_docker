@@ -9,4 +9,3 @@ if isdir(Pkg.dir("FactoredEikonalFastMarching"))==false
   Pkg.clone("https://github.com/JuliaInv/FactoredEikonalFastMarching.jl","FactoredEikonalFastMarching")
 end
 #Pkg.test("FactoredEikonalFastMarching")
-include("runExperiments.jl")

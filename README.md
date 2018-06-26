@@ -1,9 +1,34 @@
-# julia_test
+# Julia packaged containerized with Docker and Singularity
 
-Just run the following two commands (you don't need to clone this repo):
+##Docker
 
-`docker run -it adb16x/julia_test:fresh`
+###From docker hub without cloning this repo:
 
-`sh run.sh`
+1) `docker run -it adb16x/julia_test:fresh`
 
-The output is stored in `results.txt`
+2) When inside the container:
+	`sh run.sh`
+
+3) The output is stored in `results.txt`
+
+###By cloning this repo:
+
+1) `docker build --no-cache -t julia .`
+
+2) `docker run -it julia`
+
+3) When inside the container:
+	`sh run.sh`
+
+##Singularity
+
+1) Build image **and** run the code:
+	`sudo singularity --debug build test.simg Singularity |& tee sing-build.output`
+
+2) Go into the image:
+	`singularity shell test.simg`
+
+3) View the results:
+	`cat /usr/local/data/results.txt`
+
+Notes: Any output/issues with the build can be view at: `cat sing-build.output`
