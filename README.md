@@ -1,8 +1,8 @@
 # Julia packaged containerized with Docker and Singularity
 
-##Docker
+## Docker
 
-###From docker hub without cloning this repo:
+### From docker hub without cloning this repo:
 
 1) `docker run -it adb16x/julia_test:fresh`
 
@@ -11,7 +11,7 @@
 
 3) The output is stored in `results.txt`
 
-###By cloning this repo:
+### By cloning this repo:
 
 1) `docker build --no-cache -t julia .`
 
@@ -20,7 +20,7 @@
 3) When inside the container:
 	`sh run.sh`
 
-##Singularity
+## Singularity
 
 1) Build image **and** run the code:
 	`sudo singularity --debug build test.simg Singularity |& tee sing-build.output`
@@ -31,5 +31,5 @@
 3) View the results:
 	`cat /usr/local/data/results.txt`
 
-Notes: - Any output/issues with the build can be view at: `cat sing-build.output`
-	   - To reproduce all 6 rows, change the `numOfRefinements` to 6. It consumes a lot of memory though.
+Notes: * Any output/issues with the build can be view at: `cat sing-build.output`
+	   * To reproduce all 6 rows, change the `numOfRefinements` to 6. It consumes a lot of memory though.
