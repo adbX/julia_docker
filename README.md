@@ -31,5 +31,7 @@
 3) View the results:
 	`cat /usr/local/data/results.txt`
 
-Notes: * Any output/issues with the build can be view at: `cat sing-build.output`
-	   * To reproduce all 6 rows, change the `numOfRefinements` to 6. It consumes a lot of memory though.
+## Notes:
+
+* Any output/issues with the build can be view at: `cat sing-build.output`
+* To reproduce all 6 rows, change the `numOfRefinements` to 6. It consumes a lot of memory though.
