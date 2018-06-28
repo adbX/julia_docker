@@ -20,6 +20,8 @@
 3) When inside the container:
 	`sh run.sh`
 
+4) The output is stored in `results.txt`
+
 ## Singularity
 
 1) Build image **and** run the code:
